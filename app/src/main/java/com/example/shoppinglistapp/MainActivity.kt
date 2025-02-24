@@ -200,23 +200,29 @@ fun ShoppingListItemEditor(item: ShoppingListItem,
             value = editedItemName.value,
             onValueChange = { editedItemName.value = it },
             singleLine = true,
-           modifier =  Modifier.wrapContentSize().padding(8.dp)
+           modifier =  Modifier.wrapContentSize().padding(8.dp).weight(2f)
         )
 
         TextField(
             value = editedItemQuantity.value,
             onValueChange = { editedItemQuantity.value = it },
             singleLine = true,
-            modifier =  Modifier.wrapContentSize().padding(8.dp)
+            modifier =  Modifier.wrapContentSize().padding(8.dp).weight(1f)
         )
-        Button(onClick = {
-            isEditing.value = false
+        Column(modifier =  Modifier.wrapContentSize().padding(8.dp).weight(1f)) {
 
-            val updatedItem = item.copy(name = editedItemName.value,
-                quantity = editedItemQuantity.value.toIntOrNull()?:1)
-            onItemChange(updatedItem)
-        }) {
-            Text("Save")}
+
+            Button(onClick = {
+                isEditing.value = !isEditing.value
+
+                val updatedItem = item.copy(name = editedItemName.value,
+                    quantity = editedItemQuantity.value.toIntOrNull()?:1)
+                onItemChange(updatedItem)
+            }) {
+                Text("Save")
+            }
+        }
+
 
     }
 }
