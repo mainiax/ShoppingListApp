@@ -31,6 +31,7 @@ This project showcases my **proficiency in Kotlin and Jetpack Compose**, featuri
 
 ---
 <img width="222" alt="image" src="https://github.com/user-attachments/assets/2436eb37-35cf-4385-8f23-d1904fc393c4" />
+<img width="249" alt="image" src="https://github.com/user-attachments/assets/67836d16-69f6-44b4-8268-1a1ad7d60685" />
 
 ## **Why This Project Demonstrates My Expertise**  
 This project reflects my **strong understanding of modern Android development principles**, from **building clean UI components to managing application states effectively**. My approach to **reusability, validation, and performance optimization** ensures that the app is **both user-friendly and technically robust**.  
